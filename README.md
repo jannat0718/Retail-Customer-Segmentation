@@ -64,5 +64,6 @@ Loaded the "Online Retail.xlsx " into Jupyter Notebook.
         ii.Standardized / scaled the data.
 
     b.Found out the optimum number of clusters to be formed.
+    
     c.Analysed these clusters and plotted the results.
 
