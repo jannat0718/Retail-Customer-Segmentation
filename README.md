@@ -7,7 +7,8 @@
 **Data Source: kaggle**
 
 **Approach:**   
-Used the Online Retail .
+
+Loaded the "Online Retail.xlsx " into Jupyter Notebook.
 
 **1.Performed a preliminary data inspection and Data cleaning**
 
