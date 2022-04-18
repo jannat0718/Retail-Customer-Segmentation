@@ -1,4 +1,4 @@
-# Retail-Customer-Segmentation Case Study
+# Retail-Customer-Segmentations Case Study
 
 **Problem statement**
 
