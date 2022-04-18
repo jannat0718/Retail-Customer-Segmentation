@@ -4,7 +4,10 @@
 
 *It is a business critical requirement to understand the value derived from a customer. RFM is a method used for analyzing customer value.Perform customer segmentation using RFM analysis. The resulting segments can be ordered from most valuable (highest recency, frequency, and value) to least valuable (lowest recency, frequency, and value). Identifying the most valuable RFM segments can capitalize on chance relationships in the data used for this analysis.*
 
+**Data Source: kaggle**
+
 **Approach:**   
+Used the Online Retail .
 
 **1.Performed a preliminary data inspection and Data cleaning**
 
