@@ -1,4 +1,4 @@
-# Retail-Customer-Segmentation
+# Retail-Customer-Segmentation Case Study
 
 **Problem statement
 It is a business critical requirement to understand the value derived from a customer. RFM is a method used for analyzing customer value.
