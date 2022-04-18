@@ -6,24 +6,24 @@ Perform customer segmentation using RFM analysis. The resulting segments can be 
 
 **Approach:**   
 
-**1.	Performed a preliminary data inspection and Data cleaning**
+**1.Performed a preliminary data inspection and Data cleaning**
 
-a.	Checked for missing data and formulated apt strategy to treat them.
+    a.Checked for missing data and formulated apt strategy to treat them.
 
-b.	Checked for the duplicate data records and remove them if present.
+    b.Checked for the duplicate data records and remove them if present.
 
-c.	Performed Descriptive analytics on the given data.
+    c.Performed Descriptive analytics on the given data.
 
 
-**2.	Cohort Analysis:**
+**2.Cohort Analysis:**
 
-*Note: A cohort is a group of subjects who share a defining characteristic. We can observe how a cohort behaves across time and compare it to other cohorts.** 
+*Note: A cohort is a group of subjects who share a defining characteristic. We can observe how a cohort behaves across time and compare it to other cohorts.* 
 
-a.	Createed month cohorts and analysed active  customers for each cohort.
+    a.Createed month cohorts and analysed active  customers for each cohort.
 
-b.	Analysed the retention rate of customers.
+    b.Analysed the retention rate of customers.
 
-**3.	Built a RFM model – Recency Frequency and Monetary based on customer purchase behaviour.**
+**3.Built a RFM model – Recency Frequency and Monetary based on customer purchase behaviour.**
 
 *Note: Recency is about when was the last order of a customer. It means the number of days since a customer made the last purchase. If it’s a case for a website or an app, this could be interpreted as the last visit day or the last login time.*
 
@@ -31,35 +31,34 @@ b.	Analysed the retention rate of customers.
 
 *Monetary is the total amount of money a customer spent in that given period. Therefore big spenders will be differentiated with other customers such as MVP or VIP.*
 
-*a.	Calculation of RFM metrics:*
+    a.Calculation of RFM metrics:
 
-i.	Calculated Recency as the time in no. of days since last transaction
+        i.Calculated Recency as the time in no. of days since last transaction
 
-ii.	Calculated Frequency as  count of purchases done 
+        ii.Calculated Frequency as  count of purchases done 
 
-iii.	Calculated Monetary value  as total amount spend 
+        iii.Calculated Monetary value  as total amount spend 
 
-*b.	Built RFM Segments:*
+    b.Built RFM Segments:
 
-i.	Gave Recency, Frequency and Monetary scores individually by dividing them in to quartiles.
+        i.Gave Recency, Frequency and Monetary scores individually by dividing them in to quartiles.
 
-*Note: Rate "Recency" for customer who have been active more recently better than the less recent customer, because each company wants its customers to be recent 
-Rate "Frequency" and "Monetary Value" higher label because we want customer to spend more money and visit more often.*
+        Note:Rate "Recency" for customer who have been active more recently better than the less recent customer, because each company wants its customers to be recent Rate "Frequency" and "Monetary Value" higher label because we want customer to spend more money and visit more often.
 
-ii.	Combined three ratings to get a RFM segment as strings.
+        ii.Combined three ratings to get a RFM segment as strings.
 
-iii.	Calculated the RFM score by adding up the three ratings.
+        iii.Calculated the RFM score by adding up the three ratings.
 
-*c.	Analysed the RFM Segments by summarizing them .*
+    c.Analysed the RFM Segments by summarizing them .
 
-**4.	Created clusters using K means Clustering Algorithm.**
+**4.Created clusters using K means Clustering Algorithm.**
 
-*a.	Prepared the data for the algorithm.*
+    a.Prepared the data for the algorithm.
 
-i.	Checked if the data is Un-Symmetrically distributed,then managed the skewness with appropriate transformation.
+        i.Checked if the data is Un-Symmetrically distributed,then managed the skewness with appropriate transformation.
 
-ii.	Standardized / scaled the data.
+        ii.Standardized / scaled the data.
 
-*b.	Found out the optimum number of clusters to be formed.*
-*c.	Analysed these clusters and plotted the results.*
+    b.Found out the optimum number of clusters to be formed.
+    c.Analysed these clusters and plotted the results.
 
