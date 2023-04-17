@@ -46,25 +46,34 @@ An RFM model was built to analyze customer value by calculating Recency, Frequen
         have been active more recently better than the less recent customer, because each company wants its customers to be recent.
         In addition, "Frequency" and "Monetary Value" higher label because we want customer to spend more money and visit more often.
 
-        ii. Combined three ratings to get a RFM segment as strings: After the quartile values are assigned, the code calculates the RFM score for each customer by concatenating the quartile values for recency, frequency, and monetary metrics such as "111" for the best customers, "444" for the lost cheap customers, and more.
+        ii. Combined three ratings to get a RFM segment as strings: After the quartile values are assigned, the code calculates the 
+        RFM score for each customer by concatenating the quartile values for recency, frequency, and monetary metrics such as "111"
+        for the best customers, "444" for the lost cheap customers, and more.
 
-        iii. Calculated the RFM score by adding up the three ratings: This RFM score helps in classifying customers into different segments, such as Best Customers, Loyal Customers, Big Spenders, Almost Lost, Lost Customers, and Lost Cheap Customers.
+        iii. Calculated the RFM score by adding up the three ratings: This RFM score helps in classifying customers into different
+        segments, such as Best Customers, Loyal Customers, Big Spenders, Almost Lost, Lost Customers, and Lost Cheap Customers.
         
         iv. Created a pandas DataFrame with the customer segments, their corresponding RFM scores, and a description of each segment. 
 
 **K means Clustering:**
 
-        a. Selecte the relevant features: The frequency and monetary value columns of the segmented_rfm DataFrame are chosen for clustering.
+        a. Selecte the relevant features: The frequency and monetary value columns of the segmented_rfm DataFrame are chosen for
+        clustering.
 
-        b. Data Standardized: Normalized the selected features using the StandardScaler() function, which standardizes the data by transforming it to have zero mean and unit variance.
+        b. Data Standardized: Normalized the selected features using the StandardScaler() function, which standardizes the data by 
+        transforming it to have zero mean and unit variance.
 
         c. Plotting: Visualized the distribution of the standardized frequency and monetary values using seaborn's distplot function.
 
-        d. Elbow Method: Used the Elbow Method to find the optimal number of clusters (k). The method calculates the within-cluster sum of square (WCSS) for different k values (ranging from 1 to 10). It then plots WCSS against the number of clusters. The optimal k value is generally considered to be at the location of a bend (knee) in the plot. From the plot, I concluded that the optimal number of clusters is 4.
+        d. Elbow Method: Used the Elbow Method to find the optimal number of clusters (k). The method calculates the within-cluster 
+        sum of square (WCSS) for different k values (ranging from 1 to 10). It then plots WCSS against the number of clusters. The 
+        optimal k value is generally considered to be at the location of a bend (knee) in the plot. From the plot, I concluded that
+        the optimal number of clusters is 4.
 
         e. Perform K-Means clustering: Performed the clustering with the 4 clusters.
 
-        f. Visualization of customer cluster: Visualized the resulting customer clusters in a scatter plot. Each cluster represents a different type of customer:
+        f. Visualization of customer cluster: Visualized the resulting customer clusters in a scatter plot. Each cluster represents
+        a different type of customer:
 
                 * Lost Customer (red): customers who haven't made a purchase recently
                 * Loyal Customer (blue): customers who purchase frequently
